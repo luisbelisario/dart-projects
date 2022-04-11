@@ -44,4 +44,9 @@ class Conta {
   set setSaldo(double saldo) {
     this.saldo = saldo;
   }
+
+  @override
+  String toString() {
+    return "$agencia" + " $conta" + " $cliente" + " $saldo";
+  }
 }

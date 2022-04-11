@@ -1,8 +1,8 @@
-import '../models/Conta.dart';
+import '../models/conta.dart';
 
-class DataBase {
+class DataBaseConta {
 
-  static late List<Conta> listaContas;
+  static final List<Conta> listaContas = [];
 
   static addConta(Conta conta) {
     listaContas.add(conta);
@@ -10,5 +10,17 @@ class DataBase {
 
   static List<Conta> listarContas() {
     return listaContas;
+  }
+
+  static retornaContaPorCpf(String cpf) {
+    for(Conta c in listaContas) {
+      if(c.cliente.cpf == cpf) {
+        return c;
+      }
+    }
+  }
+
+  static excluirConta(Conta conta) {
+    listaContas.remove(conta);
   }
 }
