@@ -1,7 +1,6 @@
 import '../models/cliente.dart';
 
 class DataBaseCliente {
-
   static final List<Cliente> listaClientes = [];
 
   static addCliente(Cliente cliente) {
