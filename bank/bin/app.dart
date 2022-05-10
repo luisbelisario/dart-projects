@@ -4,7 +4,6 @@ import 'services/clienteservice.dart';
 import 'services/contaservice.dart';
 
 void main(List<String> arguments) {
-
   ClienteService clienteService = ClienteService();
   ContaService contaService = ContaService();
 

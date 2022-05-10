@@ -1,7 +1,6 @@
 import '../models/conta.dart';
 
 class DataBaseConta {
-
   static final List<Conta> listaContas = [];
 
   static addConta(Conta conta) {
@@ -13,8 +12,8 @@ class DataBaseConta {
   }
 
   static retornaContaPorCpf(String cpf) {
-    for(Conta c in listaContas) {
-      if(c.cliente.cpf == cpf) {
+    for (Conta c in listaContas) {
+      if (c.cliente.cpf == cpf) {
         return c;
       }
     }

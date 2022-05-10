@@ -2,21 +2,19 @@ import '../database/contarepository.dart';
 import '../models/conta.dart';
 
 class ContaService {
-
-
   void adicionaConta(Conta conta) {
     DataBaseConta.addConta(conta);
   }
 
   void adicionarVariasContas(List<Conta> listaContasAdd) {
-    for(Conta conta in listaContasAdd) {
+    for (Conta conta in listaContasAdd) {
       DataBaseConta.addConta(conta);
     }
   }
 
   void listarContas() {
     List<Conta> listaContas = DataBaseConta.listarContas();
-    for(Conta conta in listaContas) {
+    for (Conta conta in listaContas) {
       print(conta);
     }
   }
